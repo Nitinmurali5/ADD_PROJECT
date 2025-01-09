@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style(register).css">
+    <script>
+        function validateform()
+        {
+            let x1=123;y1=123;
+            let x=document.getElementById("pass").value;
+            let y=document.getElementById("cpass").value;
+            if(x==x1 && y==y1)
+        {
+            alert("Signedup successfully:)");
+            window.location.href = "login (youtube).html"; 
+            return false;
+        }
+        else{
+            alert("Invalid Password:(");
+            return false;
+        }
+        }
+       
+    </script>
+   
+</head>
+
+<body>
+
+<section class="box">
+    <br><header>Registration form</header>
+    <form action="#" class="form" name="din" onsubmit="return validateform()" method="post">
+        <div class="column">
+        <div class="input-box">
+            <label for="name" id="name">First name</label>
+<input type="text" id="fname" placeholder="Enter your first name:">
+        </div>
+        <div class="input-box">
+            <label for="name" id="name">Last name</label>
+<input type="text" id="lname" placeholder="Enter your last name:">
+        </div>
+    </div>
+        <div class="gen"><br>
+            <label for="gender" id="gender">Gender</label>
+<label for="gender" id="gender">Male</label>
+<input type="radio" id="gender" name="gender" >
+<label for="gender" id="gender">Female</label>
+<input type="radio" id="gender" name="gender" >
+        </div>
+       
+        
+            <div class="input-box">
+                <label for="dob" id="db">Date of Birth</label>
+<input type="date" id="dob">
+            </div>
+            <div class="column">
+                <div class="input-box">
+                    <label for="number" id="numb">Phone number</label>
+<input type="number" id="num" placeholder="### ### ####">
+                </div>
+            <div class="input-box">
+                <label for="mail" id="Enter">Email</label>
+<input type="text" id="mail" placeholder="Email">
+            </div>
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label for="password">Password</label>
+<input type="password" id="pass" placeholder="Password">
+                </div>
+            <div class="input-box">
+                <label for="password">Confirm Password</i></label>
+<input type="password" id="cpass" placeholder="Confirm password">
+            </div>
+            </div><br><br>
+            <center>
+                <button id="regi" value="redirect" onclick="Redirect()">Register</button><br><br>
+            </center>
+          
+           
+            
+        
+        
+
+
+   
+   
+
+
+    </form> 
+</section>
+
+</body>
+</html>
